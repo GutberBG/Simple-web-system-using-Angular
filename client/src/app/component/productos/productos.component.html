@@ -1,0 +1,18 @@
+
+<div class="col-md-3" *ngFor="let game of games">
+    <div class="bg-orange card text-center">
+        <div style="background: #ff6600;" class="card-header text-white d-flex justify-content-between align-items-center">
+            {{game.title}}
+                <i class="far fa-trash-alt"></i>
+
+        </div>
+        <img [src]="game.image" class="card-img-top" style="height: 300px;">
+        <div class="card-body">
+            <p id="preci">{{game.description}} $</p>Cantidad  <input type="number" id="cantidad" width="10px">
+            <a style="background: #ffc400;"  class="btn btn-info btn-block" id="compra" (onclick)="comprar()">
+                Comprar
+            </a>
+        </div>
+        
+    </div>
+</div>

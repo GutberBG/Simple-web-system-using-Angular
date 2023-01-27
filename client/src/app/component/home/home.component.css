@@ -1,0 +1,233 @@
+header{
+    align-items: center;
+    margin-top: 20px;
+    left: 0;
+    top: 50px;
+}
+.Titulo{
+    align-content: center;
+    font-size: 50px;
+    padding-left: 40%;
+    letter-spacing: 15px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 100px;
+    color: rgb(255, 174, 0);
+}
+.bienvenido{
+    font-size: 75px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 166, 0);
+    letter-spacing: 15px;
+    text-shadow: rgb(119, 49, 2) 5px 5px 5px;
+}
+body{
+    margin-left: 1%;
+}
+.img-circle:hover{
+    transform: scaleY(1.5) scaleX(1.5);
+    
+}
+.ofertaa{
+    padding: 3px 10px;
+    border-radius: 25px;
+    border-width: 50px;
+    border: rgb(255, 136, 0) 10px double;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    width: 90%;
+    height: 500px;
+}
+.ofertaa .animacion{
+    animation: animacioncel ease-in-out infinite 4s;
+}
+.oferdes{
+    margin-top: 1%;
+    color: black;
+}
+.oferan{
+    line-height: 1px;
+    margin-left: 50%;
+    width: 50%;
+    height: 50%;
+    border: chocolate 5px;
+    border-radius: 25px;
+    background-color: rgb(253, 210, 18);
+    box-shadow: black 5px 5px 5px;
+    animation: animacionip ease-in-out 1 15s;
+}
+.oferan:hover{
+    animation-play-state: paused;
+    box-shadow: black 10px 10px 10px;
+    transform: scaleY(1.1) scaleX(1.1);
+}
+.coberca{
+    height: 50%;
+    width: 50%;
+}
+.animaciona{
+    animation: animacionce2 ease-in-out infinite 10s;
+    
+}
+.animaciona:hover{
+    animation-play-state: paused;
+    content: url(src/assets/img/bolivia2.png);
+    
+}
+.animacionb{
+    animation: animacion3 ease-in-out infinite 10s;
+}
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;   
+    margin-top: 10%;
+    
+    clear: both;
+}
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+    
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
+
+@keyframes animacioncel{
+    0%{transform: translatey(-5%);}
+    50%{transform: translateY(0%);}
+    100%{transform: translateY(-5%);}
+}
+@keyframes animacionip{
+    0%{transform: rotateY(-90deg);}
+    100%{transform: rotateY(0deg);}
+    
+}
+@keyframes animacionce2{
+    0%{transform: translateX(-200%);}
+    30%{transform: translateX(0%);}
+    70%{transform: translateX(0%);}
+    100%{transform: translateX(100%);}
+}
+
+@keyframes animacion3{
+    0%{content: url(src/assets/img/comolidad.png); transform: rotateY(-90deg);}
+    25%{transform: rotateY(0deg);}
+    50%{ transform: rotateY(90deg);}
+    75%{transform: rotateY(0deg); }
+    99%{content: url(src/assets/img/tiempoa.png)}
+    100%{content: url(src/assets/img/comolidad.png); transform: rotateY(-90deg);}
+}
